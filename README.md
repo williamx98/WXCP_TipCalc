@@ -16,6 +16,9 @@ The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
+The following **additional** features are implemented:
+* [ ] People counter to divide the total by
+* [ ] People counter deault value that can be changed in the settings page
 ## Video Walkthrough 
 
 <img src="https://github.com/willthexu/codepath_tippy/blob/master/Will%20Xu%20CodePath%20Demo.gif" alt="Will Xu CodePath Calculator Demo" width="300px"/>
