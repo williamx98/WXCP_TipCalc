@@ -14,6 +14,7 @@
 		B742145A21224DF7001EDD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B742145821224DF7001EDD40 /* LaunchScreen.storyboard */; };
 		B742146521224DF7001EDD40 /* WillXuTipCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742146421224DF7001EDD40 /* WillXuTipCalcTests.swift */; };
 		B742147021224DF7001EDD40 /* WillXuTipCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742146F21224DF7001EDD40 /* WillXuTipCalcUITests.swift */; };
+		B742148A21228C2C001EDD40 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742148921228C2C001EDD40 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		B742146B21224DF7001EDD40 /* WillXuTipCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WillXuTipCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B742146F21224DF7001EDD40 /* WillXuTipCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillXuTipCalcUITests.swift; sourceTree = "<group>"; };
 		B742147121224DF7001EDD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B742147F2122856B001EDD40 /* WillXuTipCalc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WillXuTipCalc-Bridging-Header.h"; sourceTree = "<group>"; };
+		B742148921228C2C001EDD40 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				B742145621224DF7001EDD40 /* Assets.xcassets */,
 				B742145821224DF7001EDD40 /* LaunchScreen.storyboard */,
 				B742145B21224DF7001EDD40 /* Info.plist */,
+				B742147F2122856B001EDD40 /* WillXuTipCalc-Bridging-Header.h */,
+				B742148921228C2C001EDD40 /* SettingsViewController.swift */,
 			);
 			path = WillXuTipCalc;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				TargetAttributes = {
 					B742144B21224DF6001EDD40 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					B742145F21224DF7001EDD40 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -258,6 +264,7 @@
 			files = (
 				B742145221224DF6001EDD40 /* ViewController.swift in Sources */,
 				B742145021224DF6001EDD40 /* AppDelegate.swift in Sources */,
+				B742148A21228C2C001EDD40 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JP3MMS6QY;
 				INFOPLIST_FILE = WillXuTipCalc/Info.plist;
@@ -439,6 +447,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pre.coursework.WillXuTipCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WillXuTipCalc/WillXuTipCalc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JP3MMS6QY;
 				INFOPLIST_FILE = WillXuTipCalc/Info.plist;
@@ -457,6 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pre.coursework.WillXuTipCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WillXuTipCalc/WillXuTipCalc-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

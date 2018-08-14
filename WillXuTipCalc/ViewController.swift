@@ -1,4 +1,4 @@
-//
+///Users/insertnamethere/Desktop/apps/WillXuTipCalc/SettingsViewController.swift
 //  ViewController.swift
 //  WillXuTipCalc
 //
@@ -34,9 +34,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         self.tipPicker.dataSource = self
         self.peoplePicker.delegate = self
         self.peoplePicker.dataSource = self
+    
+        let defaults = UserDefaults.standard
+        var percSaved = defaults.string(forKey: "defaultPercentage") ?? "10"
+        if (Int(percSaved) == nil || Int(percSaved)! < 0) {
+            percSaved = "10"
+        }
         
-        tipSize = 10
-        peopleSize = 2
+        var peopSaved = defaults.string(forKey: "defaultPeopleSize") ?? "2"
+        if (Int(peopSaved) == nil || Int(peopSaved)! < 0) {
+            peopSaved = "2"
+        }
+        tipSize = Int(percSaved)!
+        peopleSize = Int(peopSaved)!
         tipPicker.selectRow(tipSize, inComponent: 0, animated: true)
         peoplePicker.selectRow(peopleSize, inComponent: 0, animated: true)
         
