@@ -1,7 +1,7 @@
 ##Will Xu's CodePath Pre-Work  
 ###A Simple Tip Calculator
 
-![Will Xu Tip Calculator Demo](https://i.imgur.com/WMsMSG6.gif)
+<img src="https://github.com/willthexu/codepath_tippy/blob/master/Will%20Xu%20CodePath%20Demo.gif" alt="Will Xu CodePath Calculator Demo" width="200px"/>
 
 ####Usage  
 * Enter the total amount  
@@ -9,6 +9,3 @@
 
 ####Settings
 * Change the defaults via the settings page
- 
-
-
