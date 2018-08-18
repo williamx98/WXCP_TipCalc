@@ -20,6 +20,7 @@ The following **additional** features are implemented:
 * [ ] People counter to divide the total by
 * [ ] People counter deault value that can be changed in the settings page
 ## Video Walkthrough 
+Here's a walkthrough of implemented user stories:
 
 <img src="https://github.com/willthexu/codepath_tippy/blob/master/Will%20Xu%20CodePath%20Demo.gif" alt="Will Xu CodePath Calculator Demo" width="300px"/>
 
