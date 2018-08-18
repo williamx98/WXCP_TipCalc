@@ -1,4 +1,4 @@
-# Pre-work - Will Xu's CodePath Pre-Work  
+# Pre-work - Will_Xu_Tip_Calculator  
 
 This is a tip calculator application for iOS.
 
