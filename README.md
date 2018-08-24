@@ -1,4 +1,4 @@
-# Pre-work - [WXCP]TipCalc
+# Pre-work - -WXCP-TipCalc
 
 This is a tip calculator application for iOS.
 
