@@ -26,12 +26,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     var tipData: [String] = ["0", "1","2","3","4","5","6","7","8","9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"]
 
+    var peopleData: [String] = ["1","2","3","4","5","6","7","8","9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         self.tipPicker.delegate = self
         self.tipPicker.dataSource = self
+        
         self.peoplePicker.delegate = self
         self.peoplePicker.dataSource = self
     
@@ -60,23 +63,34 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // The number of rows of data
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return tipData.count
+        if (pickerView == tipPicker) {
+            return tipData.count
+        } else {
+            return peopleData.count
+        }
     }
     
     // The data to return for the row and component (column) that's being passed in
     internal func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return tipData[row]
+        if (pickerView == tipPicker) {
+            return tipData[row]
+            //assign the corresponding data to that row
+        } else {
+            return peopleData[row]
+        }
     }
     
     
     // Catpure the picker view selection
+    //"pickerView will pass itself"
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // This method is triggered whenever the user makes a change to the picker selection.
         // The parameter named row and component represents what was selected.
+        //"Event Listener"
         if (pickerView == tipPicker) {
-            tipSize = row
+            tipSize = Int(tipData[row])!
         } else {
-            peopleSize = row
+            peopleSize = Int(peopleData[row])!
         }
         calcTip()
     }
